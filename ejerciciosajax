@@ -1,0 +1,16 @@
+1.https://jsonplaceholder.typicode.com/todos
+2.https://jsonplaceholder.typicode.com/todos/55
+    https://jsonplaceholder.typicozde.com/todos?id=55
+3.https://jsonplaceholder.typicode.com/todos/201
+    https://jsonplaceholder.typicode.com/todos?id=201
+4.
+  {
+    "userId": 2,
+    "title": "delectus aut autem",
+    "completed": false
+  }
+5.
+6.
+7.
+
+http://localhost:3000/posts?formed=2016

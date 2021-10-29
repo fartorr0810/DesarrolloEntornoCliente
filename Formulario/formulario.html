@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FORMULARIO EMPLEO</title>
+    <style>
+        .oculto {
+            display: none;
+        }
+        
+        .visible {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body style="background-color:  #cd9184">
+    <div>
+        <fieldset>
+            <legend><b>Datos Personales</b></legend>
+            <div>
+                <table class="egt" align="center" bgcolor=" #fc9c87 ">
+                    <tr>
+                        <td>
+                            <h1>RELLENE EL FORMULARIO</h1>
+                            <form action="http://www.iesjacaranda.es/lmsgi/resultado.php" method="GET" align="center" id="formulario">
+                                <p>Introduzca su nombre:
+                                    <input type="text" name="nombre" size="30" placeholder="Escriba su nombre" id="nombree"></p><br>
+                                <p>DNI:
+                                    <input type="text" name="dni" id="dnii" size="30" placeholder="Escriba sus dos apellidos"></p><br>
+                                <p>Fecha de nacimiento:
+                                    <input type="date" name="fecha" id="fechaa"></p><br>
+                                <p>¿Tiene hijos?:
+                                    <input type="radio" name="hijos" value="s"> Si
+                                    <input type="radio" name="hijos" value="n"> No
+                                </p>
+                                <p><br>
+                                    <p>Correo electronico:
+                                        <input type="email" id="emaill" name="correo" placeholder="Introduzca su correo"></p>
+                                    <p>Telefono:
+                                        <input type="text" name="numtelefono" id="telf" placeholder="Deje su numero de telefono">
+                                        <p>Confirme la solicutud
+                                            <input type="checkbox" name="casilla" id="casillass">Aceptar terminos<br><br>
+                                            <input type="submit" value="Enviar" align="center" accept="pdf" id="subimittt">
+                                            <input type="reset" value="Borrar" align="center">
+                                        </p>
+                        </td>
+                        </form>
+                    </tr>
+                </table>
+            </div>
+        </fieldset>
+    </div>
+    <script src="Ejercicio.js"></script>
+</body>
+
+</html>

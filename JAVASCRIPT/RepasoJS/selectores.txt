@@ -1,0 +1,10 @@
+Selectores CSS,
+con .juan eligo la clase,
+con #pedro los ipara coger para coger al primer hijo,
+de algun padre se usa plate>orange:first-child Para coger algo de solo los hijos 
+seria con 
+plate :only-child plate:nth-child(3) 
+span:first-of-type selects the first span in any element. 
+div:nth-of-type(2) selects the second instance of a div. 
+p span:only-of-type selects a span within any p if it is the 
+only span in there.
