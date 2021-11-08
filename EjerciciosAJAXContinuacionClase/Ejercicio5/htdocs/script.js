@@ -1,17 +1,17 @@
 let provincias = document.getElementById("seleccionarprovincias");
 window.addEventListener("load", (e) => {
-    fetch('http://ejercicio4.loc/cargaProvinciasXML.php')
+    fetch('http://ejercicio5.loc/cargaProvinciasJSON.php')
         .then(response => {
             if (response.ok) {
-                return response.text();
+                return response.json();
             }
             return Promise.reject(response);
         })
         .then(datos => {
-            const parser = new DOMParser();
-            const xml = parser.parseFromString(datos, "application/xml");
-            let listadeprovincias = xml.getElementsByTagName('provincia');
-            for (let index = 1; index < listadeprovincias.length; index++) {
+            let respuesta=JSON.stringify(datos);
+            let listadeprovincias = respuesta;
+            console.log(listadeprovincias[0]);
+            for (let index = 1; index < listadeprovincias.length(); index++) {
                 let opcionprovincia = document.createElement("option");
                 opcionprovincia.setAttribute("name", listadeprovincias[index].children[1].textContent);
                 opcionprovincia.setAttribute("value", listadeprovincias[index].children[1].textContent);
@@ -34,7 +34,7 @@ formulario.addEventListener("submit", (e) => {
         method: 'POST',
         body: datoformulario
     }
-    fetch('http://ejercicio4.loc/cargaMunicipiosXML.php', opciones)
+    fetch('http://ejercicio4.loc/cargaMunicipiosJSON.php', opciones)
         .then(response => {
             if (response.ok) {
                 return response.text();
