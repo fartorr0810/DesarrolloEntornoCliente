@@ -6,11 +6,6 @@ var personaje = {
     nombre: nombre,
     edad: edad
 };
-{
-    nombre: "Bruno Díaz",
-        artesMarciales;
-    ["Karate", "Aikido", "Wing Chun", "Jiu-Jitsu"];
-}
 // Convertir esta funcion a una funcion de flecha
 function resultadoDoble(a, b) {
     return (a + b) * 2;
@@ -20,6 +15,7 @@ function resultadoDoble(a, b) {
 //       PODER  = opcional
 //       ARMA   = por defecto = "arco"
 function getAvenger(nombre, poder, arma) {
+    if (arma === void 0) { arma = "arco"; }
     var mensaje;
     if (poder) {
         mensaje = nombre + " tiene el poder de: " + poder + " y un arma: " + arma;
@@ -36,3 +32,13 @@ function getAvenger(nombre, poder, arma) {
 //   * altura
 // También un método que calcule el área  =  base * altura,
 // ese método debe de retornar un numero.
+var Rectangulo = /** @class */ (function () {
+    function Rectangulo(base, altura) {
+        this.base = base;
+        this.altura = altura;
+    }
+    Rectangulo.prototype.calculaArea = function (base, altura) {
+        return base * altura;
+    };
+    return Rectangulo;
+}());

@@ -10,13 +10,13 @@ const personaje=  {
 
 
 // Cree una interfaz que sirva para validar el siguiente objeto
-interface batman = {
+interface batman {
   nombre: "Bruno Díaz",
   artesMarciales: ["Karate","Aikido","Wing Chun","Jiu-Jitsu"]
 }
 
 // Convertir esta funcion a una funcion de flecha
-function resultadoDoble( a, b ){
+function resultadoDoble( a:number, b:number ){
   return (a + b) * 2
 }
 
@@ -24,7 +24,7 @@ function resultadoDoble( a, b ){
 // donde NOMBRE = obligatorio
 //       PODER  = opcional
 //       ARMA   = por defecto = "arco"
-function getAvenger( nombre, poder, arma ){
+function getAvenger( nombre:string, poder?:number, arma="arco" ){
   var mensaje;
   if( poder ){
      mensaje = nombre + " tiene el poder de: " + poder + " y un arma: " + arma;
@@ -40,3 +40,16 @@ function getAvenger( nombre, poder, arma ){
 //   * altura
 // También un método que calcule el área  =  base * altura,
 // ese método debe de retornar un numero.
+class Rectangulo {
+  base: number;
+  altura: number;
+
+  constructor(base:number, altura:number) {
+    this.base = base;
+    this.altura = altura;
+  }
+
+  public calculaArea(base:number,altura:number):number {
+    return base*altura;
+  }
+}
