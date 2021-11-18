@@ -1,0 +1,22 @@
+<ul>
+    <p>Lista alumnos</p>
+    <li *ngFor="let alumno of lsitaalumnos;
+    let i=index; let primero=first; let final=last;" [ngClass]="{azul: primero,rojo:final}">
+        {{i+1}}-{{alumno}}
+    </li>
+</ul>
+
+
+<button (click)="borrarelemento()">Borrar</button>
+<p *ngIf="aprobados!=null; else vacio">Has Aprobado a :{{getEliminado}}</p>
+<ul>
+    <li *ngFor="let alumno of aprobados;
+  let i=index; let primero=first; let final=last;" [ngClass]="{azul: primero,rojo:final}">
+        {{i+1}}-{{alumno}}
+    </li>
+</ul>
+
+<ng-template #vacio>
+    <h2 *ngIf="lsitaalumnos.length" ;>Has aprobado a todos , que bueno eres, crea a tu little hitler y suspendelos a todos</h2>
+    <button (click)=" addelemento() ">Add</button>
+</ng-template>

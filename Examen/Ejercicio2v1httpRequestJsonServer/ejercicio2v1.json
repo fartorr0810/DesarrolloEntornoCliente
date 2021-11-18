@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "users": [
+    {
+      "id": 1,
+      "nombrevalido": "prueba",
+      "apellidosvalido": "prueba",
+      "passwordvalido": "prueba",
+      "loginvalido": "prueba",
+      "fechanacimientovalido": "prueba",
+      "edadvalida": "prueba",
+      "fechaalta": "prueba"
+    },
+    {
+      "id": 2
+    },
+    {
+      "nombrevalido": "Fran",
+      "apellidosvalido": "Arryo asdas",
+      "passwordvalido": "asdasddads",
+      "loginvalido": "asdasdasdadsaasasd",
+      "fechanacimientovalido": "2000-02-02",
+      "edadvalida": 21,
+      "fechaalta": 1637155113587,
+      "id": 3
+    }
+  ]
+}

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
+
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-contador',
+  templateUrl: './contador-componente.component.html',
+  styleUrls: ['./contador-componente.component.css']
 })
-export class AppComponent {
+export class ContadorComponente {
     titulo:string="Contador"
     contador:number=0;
     base:number=0;
@@ -30,3 +31,4 @@ export class AppComponent {
     }
 
 }
+

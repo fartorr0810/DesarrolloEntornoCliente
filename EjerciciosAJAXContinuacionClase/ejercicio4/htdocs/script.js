@@ -26,8 +26,8 @@ let formulario = document.getElementById('formulario');
 formulario.addEventListener("submit", (e) => {
     e.preventDefault();
     let datoformulario = new FormData(document.getElementById("formulario"));
-    let provinciaseleccionada=document.getElementById("seleccionarprovincias").selectedOptions;
-    let eleccion=provinciaseleccionada[0].id;
+    let provinciaseleccionada = document.getElementById("seleccionarprovincias").selectedOptions;
+    let eleccion = provinciaseleccionada[0].id;
     datoformulario.append("provincia", eleccion);
     let municipios = document.getElementById("seleccionarmunicipio");
     const opciones = {
